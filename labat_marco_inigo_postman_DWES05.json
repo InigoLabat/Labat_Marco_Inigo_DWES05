@@ -1,0 +1,141 @@
+{
+    "info": {
+        "_postman_id": "5f01c39a-9a02-4a15-8136-0b2677618711",
+        "name": "DWES05",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "GET ALL",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/api/atletas/",
+                    "path": [
+                        "api",
+                        "atletas"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "GET BY ID",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/api/atletas/5",
+                    "path": [
+                        "api",
+                        "atletas",
+                        "5"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "GET BY CLUB ID",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/api/atletas/club/3",
+                    "path": [
+                        "api",
+                        "atletas",
+                        "club",
+                        "3"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "UPDATE",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8000/api/atletas/1",
+                    "path": [
+                        "api",
+                        "atletas",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"id_club\": 2\n}"
+                }
+            }
+        },
+        {
+            "name": "CREATE",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/api/atletas/",
+                    "path": [
+                        "api",
+                        "atletas"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"nombre\" : \"Inigo\",\n  \"apellido\" : \"Labat\",\n  \"id_club\" : \"1\",\n  \"prueba\" : \"400\",\n  \"marca\" : \"46\"\n}"
+                }
+            }
+        },
+        {
+            "name": "DELETE",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:8000/api/atletas/10",
+                    "path": [
+                        "api",
+                        "atletas",
+                        "10"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                }
+            }
+        }
+    ]
+}
